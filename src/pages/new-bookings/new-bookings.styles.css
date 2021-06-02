@@ -1,0 +1,90 @@
+.newbookings-container {
+  padding-left: 2%;
+  width: 90%;
+  height: 100%;
+  padding-top: 5%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+  }
+}
+
+.card-container {
+  display: flex;
+  height: 500px;
+  padding: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    height: 100vh;
+  }
+}
+
+.date {
+  height: 20%;
+  width: 70%;
+  text-align: center;
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid var(--color-quad);
+  font-family: "Mulish", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .date {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 225px;
+  }
+}
+
+.button {
+  height: 20%;
+  width: 10%;
+  text-align: center;
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid var(--color-quad);
+  font-family: "Mulish", sans-serif;
+  color: var(--color-quad);
+  font-weight: bold;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color-quad);
+  color: var(--color-tertiary);
+  font-weight: bold;
+}
+
+/* //1024
+//360 */
+
+@media (max-width: 600px) {
+  .button {
+    width: 50%;
+  }
+}
