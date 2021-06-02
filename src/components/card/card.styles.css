@@ -36,9 +36,9 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 310px) and (max-width: 480px) {
   .card {
-    width: 200px;
+    width: 400px;
     height: 200px;
     z-index: 1;
   }
@@ -92,18 +92,33 @@
   }
   .depart::after {
     margin-left: 2px;
-    width: 80px;
+    width: 4.5rem;
   }
 }
 
-@media (max-width: 360px) {
+/* for mobiles */
+@media (min-width: 310px) and (max-width: 480px) {
   .arrival,
   .depart {
     font-size: 0.8rem;
   }
   .depart::after {
-    margin-left: 2px;
-    width: 40px;
+    margin-left: -2px;
+    width: 4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .depart::after {
+    margin-left: -2px;
+    width: 3.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .depart::after {
+    margin-left: -2px;
+    width: 3rem;
   }
 }
 
@@ -153,6 +168,12 @@ img {
 @media (max-width: 600px) {
   .hours {
     font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 310px) and (max-width: 480px) {
+  .hours {
+    left: 40%;
   }
 }
 
@@ -213,10 +234,9 @@ img {
   /* margin-top: -15%; */
 }
 
-@media (max-width: 600px) {
+@media (min-width: 310px) and (max-width: 480px) {
   .rating {
-    /* margin-left: 30%;
-    margin-top: -5%; */
+    margin-top: 0.4rem;
   }
 }
 
@@ -255,7 +275,7 @@ img {
   }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 310px) and (max-width: 480px) {
   .amount-rating {
     margin-top: 10px;
     margin-bottom: 10px;

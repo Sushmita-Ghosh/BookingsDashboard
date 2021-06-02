@@ -17,6 +17,12 @@
   border-radius: 5px;
 }
 
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  .sidebar-container {
+    width: 5%;
+  }
+}
+
 .links-container {
   display: flex;
   flex-direction: column;
@@ -39,7 +45,8 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
   .link {
     font-size: 0.6rem;
   }
@@ -76,10 +83,10 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (min-device-width: 310px) and (max-device-width: 480px) {
   .link-container {
     width: 90px;
-    height: 50px;
-    margin-left: 30px;
+    height: 40px;
+    margin-left: 40px;
   }
 }

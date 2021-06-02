@@ -6,8 +6,17 @@ import CardImage from "../../images/cardimg.jpg";
 import data from "../data/data";
 
 import "./card.styles.css";
+import { purple } from "@material-ui/core/colors";
 
 const Card = ({ data }) => {
+  // the colorStatus object
+  const colorStatus = {
+    Unavailable: "#DC3545",
+    "Check Status": "#D63384",
+    "Available Book Now": "green",
+    "Checking Status": "#0D6EFD",
+  };
+
   console.log(data);
   return (
     <div className="card">
@@ -20,7 +29,17 @@ const Card = ({ data }) => {
           <h6 className="arrival">{data.arrival}</h6>
         </div>
         <div className="availability">
-          <div className="status">{data.status}</div>
+          <div
+            className="status"
+            // color-coded logic
+            style={{
+              backgroundColor: Object.keys(colorStatus).includes(data.status)
+                ? colorStatus[data.status]
+                : purple,
+            }}
+          >
+            {data.status}
+          </div>
         </div>
         <div className="amount-rating">
           <div className="amount">{data.cost}</div>
